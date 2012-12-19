@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "version": "x.x.x",
+  "author": "TerrordactylDesigns",
+  "description": "",
+  "contributors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+
+  },
+  "engines": {
+    "node": ">=0.8.x"
+  }
+}
