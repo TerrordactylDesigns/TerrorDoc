@@ -1,12 +1,12 @@
 {
-  "name": "",
-  "version": "x.x.x",
+  "name": "terrordoc",
+  "version": "0.0.1",
   "author": "TerrordactylDesigns",
-  "description": "",
+  "description": "Doc generator for my personal style of header",
   "contributors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Michael Belardo",
+      "email": "Mbelardo1@gmail.com"
     }
   ],
   "repository": {
@@ -14,9 +14,13 @@
     "url": ""
   },
   "dependencies": {
-
+    "express": "3.0.x",
+    "jade": "0.27.x"
   },
   "engines": {
     "node": ">=0.8.x"
+  },
+  "scripts": {
+    "start": "node app.js"
   }
 }

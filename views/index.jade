@@ -1,0 +1,8 @@
+extends layout
+
+block mainContent
+  div#mainpage
+    h3 Select your file
+    form(method="post", enctype="multipart/form-data")
+      input(type='file', name='filepath')
+      input(type='submit', value='Go')
