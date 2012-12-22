@@ -1,6 +1,7 @@
 var express       = require('express')
   , app           = express()
   , TerrorParser  = require('./lib/index')
+  , x = new TerrorParser()
 
 app.use(app.router)
 app.use(express.static(__dirname + '/public'))
@@ -11,7 +12,7 @@ app.set('view options', { layout: false })
 app.use(express.bodyParser({ keepExtensions: true, uploadDir: '/' }))
 
 // Routes
-require('./routes/home')(app)
+require('./routes/home')(app, x)
 //require('./routes/global')(app) //this is acting weird and 404ing every call
 
 var port = process.env.PORT || 3000
