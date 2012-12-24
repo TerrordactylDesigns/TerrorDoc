@@ -21,8 +21,16 @@ It's my way to quickly scan a .js file using [this world renowned parser](https:
 
 ## Setup
 
-Download. Run npm install from the extracted directory to install dependencies
+Download.
+
+Run
+
+    npm install
+
+from the extracted directory to install dependencies.
+
     npm start
+
 Go to [http://localhost:3000](http://localhost:3000)
 
 Click select a file and.... seriously... It's 2 buttons, You'll be OK.....
@@ -40,3 +48,7 @@ Expect them.... Literally 0 error handling or tests.... Wait, why are you even u
 ![image](https://dl.dropbox.com/u/51430720/Screen%20Shot%202012-12-23%20at%208.38.48%20PM.png)
 
 ![image](https://dl.dropbox.com/u/51430720/Screen%20Shot%202012-12-23%20at%208.38.54%20PM.png)
+
+#### License
+
+MIT
