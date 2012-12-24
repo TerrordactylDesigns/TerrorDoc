@@ -11,8 +11,18 @@ app.set('view engine', 'jade')
 app.set('view options', { layout: false })
 
 // Routes
+/*
+ *  GET home
+ */
 app.get('/', routes.index)
+/*
+ *  POST parse
+ */
 app.post('/parse', routes.parse)
+/*
+ *  GET download
+ */
+app.get('/download', routes.download)
 
 // Start
 var port = process.env.PORT || 3000

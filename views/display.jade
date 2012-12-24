@@ -2,22 +2,28 @@ extends layout
 
 block mainContent
   div#displaypage
-    each doc in docs
+    if docs.length > 0
+      div#downloads
+        a(href="/download", title="Save To File").downloadlink
+          | <i class="icon-file icon-large"></i>
+      each doc in docs
+        div.fullsection
+          h3.sectiontitle.serif #{doc.name} - 
+            span #{doc.privPub}
+          if doc.argList.length > 0
+            div.section
+              h4.sectiontitle.serif Arguments:
+              ul
+                each arg in doc.argList
+                  li #{arg}
+          if doc.ret != ''
+            div.section
+              h4.sectiontitle.serif Returns:
+              p #{doc.ret}
+          if doc.notes != ''
+            div.section
+              h4.sectiontitle.serif Notes:
+              p #{doc.notes}
+    else
       div.fullsection
-        h3.sectiontitle.serif #{doc.name} - 
-          span #{doc.privPub}
-        if doc.argList.length > 0
-          div.section
-            h4.sectiontitle.serif Arguments:
-            ul
-              each arg in doc.argList
-                li #{arg}
-        if doc.ret != ''
-          div.section
-            h4.sectiontitle.serif Returns:
-            p #{doc.ret}
-        if doc.notes != ''
-          div.section
-            h4.sectiontitle.serif Notes:
-            p #{doc.notes}
-
+        h3.sectiontitle.serif Nothing Found

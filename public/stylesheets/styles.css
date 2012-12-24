@@ -18,7 +18,9 @@ html, body { height:100% }
 .red { color:Red }
 
 /*=-=-=-=-=-=-=-=-=-=-Header Style=-=-=-=-=-=-=-=-=-=-=-=-=*/
-#pageheader { /*margin-bottom: 20px */}
+#pageheader { 
+  /*margin-bottom: 20px */
+}
 #logo h1 { 
   margin:0;padding:0; 
   font-size:5em; 
@@ -44,6 +46,15 @@ html, body { height:100% }
   padding-top:4em
 }
 #footer a { color:#CCC }
+.sociallink { 
+  padding:.3em; 
+  margin-left: .3em;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  } .sociallink:hover {
+      background: #F1F1F1;
+    }
 
 /*=-=-=-=-=-=-=-=-=-=-General Style=-=-=-=-=-=-=-=-=-=-=-=-*/
 body { font-family: 'Lucida Grande', Helvetica, Arial, sans-serif}
@@ -124,3 +135,17 @@ h3.sectiontitle span {
     text-shadow: 0px 0px 8px #DFDFDF
   }
 .section ul li { margin-bottom:.3em }
+#downloads {
+  margin-top: .9em;
+  font-size: 1.5em;
+}
+.downloadlink {
+  color: #CCC;
+  padding:.3em; 
+  margin-left: .3em;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  } .downloadlink:hover {
+      background: #F1F1F1;
+    }
