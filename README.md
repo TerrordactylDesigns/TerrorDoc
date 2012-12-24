@@ -17,13 +17,12 @@
 
 ## What is this?
 
-It's my way to quickly scan a .js file to see what functions are in it and what they do. Will add more features as I go like exporting/saving.
+It's my way to quickly scan a .js file using [this world renowned parser](https://github.com/TerrordactylDesigns/TerrorParser) to see what functions are in it and what they do. Will add more features as I go like exporting/saving.
 
 ## Setup
 
 Download. Run npm install from the extracted directory to install dependencies
     npm start
-
 Go to [http://localhost:3000](http://localhost:3000)
 
 Click select a file and.... seriously... It's 2 buttons, You'll be OK.....
