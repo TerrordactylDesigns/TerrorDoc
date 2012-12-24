@@ -1,0 +1,126 @@
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  *Filename:        style.css
+  *Author:        Michael Belardo
+  Includes sticky footer code and css reset
+/*=-=-=-=-=-=-=-=-=-=-=-=-Reset=-==-=-=-=-=-=-=-=-=-=-=-=-=*/
+/* CSS Reset */
+html,body,div,span,object,iframe,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,form,label,caption,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{border:0;outline:0;font-size:100%;background:transparent;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+html, body { height:100% }
+
+/*=-=-=-=-=-=-=-=-=-=-=-=Tool Kit=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+.floatleft { float: left }
+.clearboth { clear:both }
+.floatright { float:right }
+.auto { overflow:auto }
+.serif { font-family: Georgia, serif }
+.sansserif { font-family: 'Lucida Grande', Helvetica, Arial, sans-serif }
+.red { color:Red }
+
+/*=-=-=-=-=-=-=-=-=-=-Header Style=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#pageheader { /*margin-bottom: 20px */}
+#logo h1 { 
+  margin:0;padding:0; 
+  font-size:5em; 
+  font-family: Times, serif; color:#CCC;
+  letter-spacing: .1em
+}
+#logo h1:hover {
+  -moz-text-shadow: 0px 0px 30px #CFCFCF;
+  -webkit-text-shadow: 0px 0px 30px #CFCFCF;
+  text-shadow: 0px 0px 30px #CFCFCF
+}
+#title { font-size: 1.3em; color:#CCC }
+
+/*=-=-=-=-=-=-=-=-=-=-Footer Style=-=-=-=-=-=-=-=-=-=-=-=-=*/
+#footer, #push { height: 150px; clear:both }
+#footer {
+  text-align:center;
+  width:960px;
+  margin:0 auto
+}
+#footer p {
+  color:#CCC;
+  padding-top:4em
+}
+#footer a { color:#CCC }
+
+/*=-=-=-=-=-=-=-=-=-=-General Style=-=-=-=-=-=-=-=-=-=-=-=-*/
+body { font-family: 'Lucida Grande', Helvetica, Arial, sans-serif}
+#wrapper {
+  width: 960px;
+  min-height: 100%; height: auto !important; height: 100%;
+  margin: 0 auto -150px
+}
+* {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition:    all 0.2s ease;
+  -ms-transition:     all 0.2s ease
+}
+ul { list-style: none }
+a { text-decoration: none }
+/*=-=-=-=-=-=-=-=-=-=-=Main Style-=-=-=-=-=-=-=-=-=-=-=-=-*/
+fieldset {
+  padding:3em;margin:6em auto 0;
+  width: 300px;
+  border:3px solid #CCC;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius:20px
+}
+legend { color:#CCC }
+.formrow { padding:.5em;margin-bottom: .3em }
+#gobutton {
+  color:#AAA;
+  background: #F1F1F1;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  -moz-box-shadow: 0px 0px 8px #DDD;
+  -webkit-box-shadow: 0px 0px 8px #DDD;
+  box-shadow: 0px 0px 8px #DDD;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.7em
+} #gobutton:hover { background: #E9E9E9 }
+div#gobutton.disabled { background: #B0B0B0 }
+div#gobutton.disable:hover{ background: #B0B0B0 }
+#pickafile {
+  background: #F1F1F1; 
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  -moz-box-shadow: 0px 0px 8px #DDD;
+  -webkit-box-shadow: 0px 0px 8px #DDD;
+  box-shadow: 0px 0px 8px #DDD;
+  text-align: center;
+  padding: 1em;
+  color: #AAA;
+  font-size: 1.7em
+} #pickafile:hover { background: #E9E9E9 }
+#file, #go { opacity: 0 }
+
+/*=-=-=-=-=-=-=-=-=-=-Display Styles=-=-=-=-=-=-=-=-=-=-=-=*/
+.fullsection {
+  color: #BBB;
+  padding:1em;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-bottom: 1px dotted #DDD
+} .fullsection:hover { 
+    background:#F9F9F9;
+    -moz-box-shadow: 0px 0px 8px #DFDFDF;
+    -webkit-box-shadow: 0px 0px 8px #DFDFDF;
+    box-shadow: 0px 0px 8px #DFDFDF
+  }
+.sectiontitle { color:#999 }
+h3.sectiontitle span { 
+  color:#DDD; 
+  font-family: 'Lucida Grande', Helvetica, Arial, sans-serif
+} h3.sectiontitle span:hover {
+    -moz-text-shadow: 0px 0px 8px #DFDFDF;
+    -webkit-text-shadow: 0px 0px 8px #DFDFDF;
+    text-shadow: 0px 0px 8px #DFDFDF
+  }
+.section ul li { margin-bottom:.3em }

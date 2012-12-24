@@ -1,8 +1,8 @@
 {
   "name": "terrordoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "TerrordactylDesigns",
-  "description": "Doc generator for my personal style of header",
+  "description": "Doc generator and viewer for my personal style of header",
   "contributors": [
     {
       "name": "Michael Belardo",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/TerrordactylDesigns/TerrorDoc"
   },
   "dependencies": {
     "express": "3.0.x",

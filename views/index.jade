@@ -2,7 +2,37 @@ extends layout
 
 block mainContent
   div#mainpage
-    h3 Select your file
-    form(method="post", enctype="multipart/form-data")
-      input(type='file', name='filepath')
-      input(type='submit', value='Go')
+    fieldset
+      legend Select your file
+      form(method="post", action="/parse", enctype="multipart/form-data")
+        div.formrow
+          div#pickafile
+            p Select A File
+        div.formrow
+          div#gobutton
+            p Parse!
+        input(type='submit', value='Go')#go
+        input(type='file', name='filepath')#file
+  script(type="text/javascript")
+    $(document).ready(function() {
+      var $file       = $('#file')
+        , $pickafile  = $('#pickafile')
+        , $go         = $('#go')
+        , $gobutton   = $('#gobutton')
+      $gobutton.addClass('disabled')
+      $pickafile.click(function() {
+        $file.click()
+      })
+      $gobutton.click(function() {
+        $go.click()
+      })
+      $file.change(function (){
+         var filePath = $(this).val()
+         if (filePath) {
+           var fileSplit  = filePath.split('\\')
+             , fileName   = fileSplit[fileSplit.length -1]
+           $pickafile.html(fileName)
+           $gobutton.removeClass('disabled')
+         }
+       })
+    })

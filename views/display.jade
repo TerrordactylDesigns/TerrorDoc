@@ -1,0 +1,23 @@
+extends layout
+
+block mainContent
+  div#displaypage
+    each doc in docs
+      div.fullsection
+        h3.sectiontitle.serif #{doc.name} - 
+          span #{doc.privPub}
+        if doc.argList.length > 0
+          div.section
+            h4.sectiontitle.serif Arguments:
+            ul
+              each arg in doc.argList
+                li #{arg}
+        if doc.ret != ''
+          div.section
+            h4.sectiontitle.serif Returns:
+            p #{doc.ret}
+        if doc.notes != ''
+          div.section
+            h4.sectiontitle.serif Notes:
+            p #{doc.notes}
+

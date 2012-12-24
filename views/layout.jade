@@ -2,6 +2,7 @@
 html
   head
     link(rel='Stylesheet', href='/stylesheets/styles.css')
+    script(src='/javascript/jquery-1.8.0.min.js', type='text/javascript')
     title #{title}
     //
       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM$7OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -37,10 +38,11 @@ html
       MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM877IMMMMMMMMMMMMMMMMMMMMMMM
   body
     #wrapper
-      header.container#header
+      header.container#pageheader
         div#logo
-          h1 TerrorDoc
-        h2#title Document generator for my flavor of headers
+          a(href="/")
+            h1 TerrorDoc
+        //h2#title.sansserif Document generator for TerrorDoc
       #main-content
         block mainContent
       #push
