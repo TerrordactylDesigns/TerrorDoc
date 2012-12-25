@@ -1,6 +1,6 @@
 {
   "name": "terrordoc",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "TerrordactylDesigns",
   "description": "Doc generator and viewer for my personal style of header",
   "contributors": [
@@ -16,7 +16,8 @@
   "dependencies": {
     "express": "3.0.x",
     "jade": "0.27.x",
-    "mime": "1.2.x"
+    "mime": "1.2.x",
+    "terrorparser": "0.0.x"
   },
   "engines": {
     "node": ">=0.8.x"

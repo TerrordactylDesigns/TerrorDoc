@@ -1,4 +1,4 @@
-var TerrorParser  = require('../lib/index')
+var TerrorParser  = require('terrorparser')
   , fs            = require('fs')
   , files         = null
   , path          = require('path')
