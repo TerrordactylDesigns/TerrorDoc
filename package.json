@@ -17,11 +17,11 @@
     "express": "3.0.x",
     "jade": "0.27.x",
     "mime": "1.2.x",
-    "terrorparser": "*",
+    "terrorparser": "*"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "tap" : "*"
-    },
+  },
   "engines": {
     "node": ">=0.8.x"
   },
