@@ -17,8 +17,8 @@
     "express": "3.0.x",
     "jade": "0.27.x",
     "mime": "1.2.x",
-    "terrorparser": "0.0.x",
-    "tap" : "0.2.x"
+    "terrorparser": "*",
+    "tap" : "*"
   },
   "engines": {
     "node": ">=0.8.x"
