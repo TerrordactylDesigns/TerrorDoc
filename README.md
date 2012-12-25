@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/TerrordactylDesigns/TerrorDoc.png)](http://travis-ci.org/TerrordactylDesigns/TerrorDoc)
 
-### How I Header:
+### How I Header/TerrorDoc a js function:
 
     /**/// Public: function_name
     /**///
