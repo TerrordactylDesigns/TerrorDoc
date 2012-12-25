@@ -17,12 +17,14 @@
     "express": "3.0.x",
     "jade": "0.27.x",
     "mime": "1.2.x",
-    "terrorparser": "0.0.x"
+    "terrorparser": "0.0.x",
+    "tap" : "0.2.x"
   },
   "engines": {
     "node": ">=0.8.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "tap test/index.js"
   }
 }
