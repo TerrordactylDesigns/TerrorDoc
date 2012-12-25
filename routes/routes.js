@@ -25,21 +25,20 @@ var TerrorParser  = require('terrorparser')
 /**/// Returns
 /**/// return - GET download of TMP file
 exports.download = function(req, res) {
-  var file = __dirname + '/../TMP/index.html';
+  var file        = __dirname + '/../TMP/index.html'
+    , filename    = path.basename(file)
+    , mimetype    = mime.lookup(file)
+    , filestream  = fs.createReadStream(file)
 
-  var filename = path.basename(file);
-  var mimetype = mime.lookup(file);
+  res.setHeader('Content-disposition', 'attachment; filename=' + filename)
+  res.setHeader('Content-type', mimetype)
 
-  res.setHeader('Content-disposition', 'attachment; filename=' + filename);
-  res.setHeader('Content-type', mimetype);
-
-  var filestream = fs.createReadStream(file);
   filestream.on('data', function(chunk) {
-    res.write(chunk);
-  });
+    res.write(chunk)
+  })
   filestream.on('end', function() {
-    res.end();
-  });
+    res.end()
+  })
 }
 /**/// Public: index
 /**///
@@ -72,7 +71,6 @@ exports.parse = function(req, res) {
     var data = TerrorParser(postData)
     // save to TMP
     if (data.length > 0) {
-      //buildHtml(data)
       require('../lib/buildhtml')(data)
     }
     res.render('display', {title:'TerrorDoc', docs: data, fixed:true})
