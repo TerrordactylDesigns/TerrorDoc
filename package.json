@@ -18,8 +18,10 @@
     "jade": "0.27.x",
     "mime": "1.2.x",
     "terrorparser": "*",
-    "tap" : "*"
   },
+  "devDependencies" : {
+    "tap" : "*"
+    },
   "engines": {
     "node": ">=0.8.x"
   },
