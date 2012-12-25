@@ -1,5 +1,7 @@
 # Document Creator/Viewer For My Style Of Comments
 
+[![Build Status](https://secure.travis-ci.org/TerrordactylDesigns/TerrorDoc.png)](http://travis-ci.org/TerrordactylDesigns/TerrorDoc)
+
 ### How I Header:
 
     /**/// Public: function_name
