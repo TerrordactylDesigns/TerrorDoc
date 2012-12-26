@@ -1,6 +1,6 @@
 # Document Creator/Viewer For My Style Of Comments
 
-[![Build Status](https://secure.travis-ci.org/TerrordactylDesigns/TerrorDoc.png)](http://travis-ci.org/TerrordactylDesigns/TerrorDoc)
+[![Build Status](https://travis-ci.org/TerrordactylDesigns/TerrorDoc.png?branch=master)](https://travis-ci.org/TerrordactylDesigns/TerrorDoc)
 
 ### How I Header/TerrorDoc a js function:
 
