@@ -5,6 +5,7 @@ var fs        = require('fs')
   , buildhtml = require('../lib/buildhtml')
   , single    = require('./fixtures/single')
   , multi     = require('./fixtures/multi')
+  , files     = null
   , cleanTMP  = function() {
                   //delete the ./test/TMP/ dir contents
                   try {
