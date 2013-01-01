@@ -19,7 +19,9 @@
 
 ## What is this?
 
-It's my way to quickly scan a .js file using [this world renowned parser](https://github.com/TerrordactylDesigns/TerrorParser) to see what functions are in it and what they do. Will add more features as I go like exporting/saving.
+It's my way to quickly scan a .js file using [this world renowned parser](https://github.com/TerrordactylDesigns/TerrorParser) to see what functions are in it and display them in a downloadable HTML page.
+
+It is also an automated generator of documents into a Docs folder.
 
 ## Setup
 
