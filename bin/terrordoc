@@ -1,0 +1,47 @@
+#!/usr/bin/env node
+var opt       = process.argv
+  , options   = {}
+/**/// Public: contains
+/**///
+/**/// Args
+/**/// obj - a value to check for
+/**///
+/**/// Returns
+/**/// return - boolean of whether or not the arg is in an array
+Array.prototype.contains = function(obj) {
+  var i = this.length
+  while (i--)
+    if (this[i] == obj)
+      return true
+  return false
+}
+// no options is just the site
+if (opt.length === 2) {
+  require('../app')
+} else {
+  buildOptions()
+  require('../lib/generatedoc')(options)
+}
+/**/// Private: buildOptions
+/**///
+/**/// Notes
+/**/// note - runs generator and builds docs
+function buildOptions() {
+  var currentKey = ''
+  // odd args are flags
+  for (var i=2;i<opt.length;i++) {
+    if (i % 2 === 0) {
+      // find the option and its following setting
+      if (opt[i] === '-i')
+        currentKey = 'input'
+      else if (opt[i] === '-o')
+        currentKey = 'output'
+      else
+        currentKey = ''
+    } else {
+      // the setting flag
+      if (currentKey !== '')
+        options[currentKey] = opt[i]
+    }
+  }
+}
