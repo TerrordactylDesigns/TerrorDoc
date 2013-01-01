@@ -25,13 +25,21 @@ It's my way to quickly scan a .js file using [this world renowned parser](https:
 
 Download.
 
-Run
+Run:
 
     npm install
 
 from the extracted directory to install dependencies.
 
+For quick single file site use:
+
     npm start
+
+For some fun:
+
+    node bin/terrordoc [-i <project folder path> (required)] [-o <optional doc output path>]
+
+This will go through the project folder and parse each .js file and write a corresponding html file into the optional output path. Default path is projectfolder/Docs.
 
 Go to [http://localhost:3000](http://localhost:3000)
 
