@@ -21,7 +21,7 @@
 
 It's my way to quickly scan a .js file using [this world renowned parser](https://github.com/TerrordactylDesigns/TerrorParser) to see what functions are in it and display them in a downloadable HTML page.
 
-It is also an automated generator of documents into a Docs folder.
+It is also an automated generator of documents into a Docs folder (Only goes one subfolder deep currently, till I actually spend some time on this).
 
 ## Setup
 
@@ -33,15 +33,15 @@ Run:
 
 from the extracted directory to install dependencies.
 
-For quick single file site use:
-
-    npm start
-
 For some fun:
 
     node bin/terrordoc [-i <project folder path> (required)] [-o <optional doc output path>]
 
 This will go through the project folder and parse each .js file and write a corresponding html file into the optional output path. Default path is projectfolder/Docs.
+
+For quick single file site use:
+
+    npm start
 
 Go to [http://localhost:3000](http://localhost:3000)
 

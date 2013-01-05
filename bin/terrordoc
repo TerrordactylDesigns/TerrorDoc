@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var opt       = process.argv
-  , options   = {}
+// vim:ft=javascript:
+var opt = process.argv
 /**/// Public: contains
 /**///
 /**/// Args
@@ -19,15 +19,16 @@ Array.prototype.contains = function(obj) {
 if (opt.length === 2) {
   require('../app')
 } else {
-  buildOptions()
-  require('../lib/generatedoc')(options)
+  var opts = buildOptions()
+  require('../lib/generatedoc')(opts)
 }
 /**/// Private: buildOptions
 /**///
 /**/// Notes
 /**/// note - runs generator and builds docs
 function buildOptions() {
-  var currentKey = ''
+  var currentKey  = ''
+    , options     = {}
   // odd args are flags
   for (var i=2;i<opt.length;i++) {
     if (i % 2 === 0) {
@@ -44,4 +45,5 @@ function buildOptions() {
         options[currentKey] = opt[i]
     }
   }
+  return options
 }
